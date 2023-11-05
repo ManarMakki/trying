@@ -21,13 +21,14 @@
     </style>
 </head>
 <body>
-    <h1>Coin Toss Simulator</h1>
-    <button onclick="tossCoin()">ارمي قرشك و جرب حظك</button>
-    <p id="result">Result: كلام</p>
+    <h1>ارمي قرشك و جرب حظك</h1>
+    <button onclick="tossCoin()">ارمي يامعلم</button>
+    <p id="result">Result: 
+        كلام</p>
 
     <script>
         function tossCoin() {
-            const outcomes = ['وجه', 'كلام'];
+            const outcomes = ['ملك', 'كتابة'];
             const result = outcomes[Math.floor(Math.random() * outcomes.length)];
             document.getElementById('result').textContent = `Result: ${result}`;
         }
